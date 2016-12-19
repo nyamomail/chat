@@ -1,0 +1,16 @@
+create table login(
+id int auto_increment,
+loginid varchar(32),
+password varchar(16),
+dispname varchar(32),
+del_flag bool,
+lastLogin_date datetime,
+index(id));
+
+create table chatlog(
+id int auto_increment,
+dispname varchar(32),
+comment varchar(256),
+del_flag bool,
+comment_date datetime,
+index(id));
